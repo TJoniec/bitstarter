@@ -1,9 +1,9 @@
 var express = require('express');  //import the express library
-var app = express(); //create the application
+var app = express.createServer(); //create the application
 app.use(express.logger());  // add some logging
 
 // define a function to respond to the requests made to the site as an example
-app.get('/',function(request,response){
+app.get('/',function(request, response){
     response.send('Hello World');
 });
 
