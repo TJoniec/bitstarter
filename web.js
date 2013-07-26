@@ -1,4 +1,7 @@
 var express = require('express');  //import the express library
+var fs = require('fs'); //import the filesyatem library
+
+
 var app = express.createServer(); //create the application
 app.use(express.logger());  // add some logging
 
