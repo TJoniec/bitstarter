@@ -19,7 +19,7 @@ var file_buffer = fs.readFileSync('index.html');
 // buffer converts to a UTF string.
 
 app.get('/',function(request, response){
-    response.send(file_buffer.toString("utf-8");
+    response.send(file_buffer.toString("utf-8"));
 });
 
 // start lisening on port 5000 and fire up the server
